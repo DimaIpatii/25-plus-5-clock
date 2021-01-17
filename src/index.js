@@ -1,9 +1,14 @@
 import React from 'react';
-import ReactDOM from 'react-dom';
+import reander, { render } from 'react-dom';
 
 
-const App = () => {
-    return <h1>Hello World!</h1>
-}
+/* Styles */
+import './sass/main.scss';
 
-ReactDOM.render(<App />, document.getElementById('root'));
+/* React Component */
+import App from './react/App.js';
+
+render(
+    <App />,
+    document.getElementById('root')
+);
