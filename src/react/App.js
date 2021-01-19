@@ -165,37 +165,39 @@ function App() {
   }, [state.sessionLength, state.breakLength, state.timerLength]);
 
   return (
-    <div className="app-container">
+    <>
+      
+
+      <header className="controll-panel">
+        <h1 className="logo">25 + 5 Clock</h1>
+
+        <StartButton timerState={state.timerState} setTimerState={timerState} />
+
+        <nav className="length-constollers timer-controller">
+            <BreakLength
+                breakLength={state.breakLength}
+                timerState={state.timerState}
+                updateTimerLength={updateBreak}
+            />
+            <ResetButton reset={reset} />
+            <SessionLength
+                sessionLength={state.sessionLength}
+                timerState={state.timerState}
+                updateTimerLength={updateSession}
+            />
+        </nav>
+      </header>
       <TimerScreen
         min={currentTimerMin}
         sec={currentTimerSec}
         timerLength={state.timerLength}
       />
-
-      <div className="controll-panel">
-        <h1 className="logo">25 + 5 Clock</h1>
-        <StartButton timerState={state.timerState} setTimerState={timerState} />
-        <div className="length-constollers">
-          <BreakLength
-            breakLength={state.breakLength}
-            timerState={state.timerState}
-            updateTimerLength={updateBreak}
-          />
-          <ResetButton reset={reset} />
-          <SessionLength
-            sessionLength={state.sessionLength}
-            timerState={state.timerState}
-            updateTimerLength={updateSession}
-          />
-        </div>
-      </div>
-
       <audio
         id="beep"
         preload="auto"
         src="https://raw.githubusercontent.com/freeCodeCamp/cdn/master/build/testable-projects-fcc/audio/BeepSound.wav"
       />
-    </div>
+    </>
   );
 }
 

@@ -1,0 +1,10 @@
+.controll-panel {
+    @include size(55%,100%);
+    padding: 3rem 0;
+    background: $controll-panel-bg;
+    backdrop-filter: blur(8.5px);
+    -webkit-backdrop-filter: blur(8.5px);
+
+    border-top-right-radius: 1rem;
+    border-bottom-right-radius: 1rem;
+}

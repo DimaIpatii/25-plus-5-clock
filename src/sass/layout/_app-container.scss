@@ -1,0 +1,9 @@
+.app-container {
+    @include size(95rem, 60rem);
+    max-width: 110rem;
+    background: $app-container-bg;
+    box-shadow: 0 6px 9px 0 $app-conatainer-shadow-color;
+    backdrop-filter: blur(7.5px);
+    -webkit-backdrop-filter: blur(7.5px);
+    border-radius: 1.5rem;
+  }

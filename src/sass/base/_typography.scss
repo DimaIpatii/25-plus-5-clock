@@ -1,0 +1,62 @@
+/* Reset */
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-size: 1.6rem;
+  font-weight: $font-weight-light;
+  font-family: 'Hind', sans-serif;
+}
+
+/* Screen */
+.screen__timer{
+    font-size: $text-size-timer;
+    color: $text-color-primary-dark;
+}
+
+.screen__timer-state{
+    font-size: $text-size-timer-state;
+    color: $text-color-secondary-dark;
+}
+
+/* App Controller */
+
+// Labels:
+.logo {
+    font-size: $text-size-logo;
+    color: $text-color-secondary-dark;
+}
+
+/* Timer Controller */
+.timer-controller {
+
+    &__name {
+        font-size: $text-size-lenght-label;
+        color: $text-color-secondary-dark;
+    }
+    &__screen {
+        font-size: $text-size-lenght-val;
+        font-weight: $font-weight-bold;
+    }
+  }
+  
+  
+
+// Buttons:
+
+.button {
+    &_increment,
+    &_decrement { font-size: $text-size-lenght-button; }
+    &_increment {color: $button-color-inc;}
+    &_decrement {color: $button-color-dec; }
+    &_reset { color: $text-color-primary-light; }
+    
+    &_start {
+        font-size: $text-size-start-button;
+        color: $text-color-primary-light;
+        letter-spacing: 1px;
+    }
+}
+    
+  

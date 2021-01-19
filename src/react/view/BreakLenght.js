@@ -13,14 +13,14 @@ const BreakLenght = ({ breakLength, timerState, updateTimerLength }) => {
   // ***********************************
 
   return (
-    <div className="length-container">
-      <h3 id="break-label" className="length-name">
+    <div className="timer-controller__lenght">
+      <h3 id="break-label" className="timer-controller__name">
         Break Length
       </h3>
-      <div id="break-length" className="length-screen">
+      <div id="break-length" className="timer-controller__screen">
         {breakVal}
       </div>
-      <div className="button-wrapper">
+      <div className="timer-controller__buttons">
         <input
           id="break-increment"
           className="button button_increment"

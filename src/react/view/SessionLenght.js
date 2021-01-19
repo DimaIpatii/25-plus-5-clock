@@ -8,16 +8,16 @@ const SessionLenght = ({ sessionLength, timerState, updateTimerLength }) => {
   }, [sessionLength]);
 
   return (
-    <div className="length-container">
-      <h3 id="session-label" className="length-name">
+    <div className="timer-controller__lenght">
+      <h3 id="session-label" className="timer-controller__name">
         Session Length
       </h3>
 
-      <div id="session-length" className="length-screen">
+      <div id="session-length" className="timer-controller__screen">
         {sessionVal}
       </div>
 
-      <div className="button-wrapper">
+      <div className="timer-controller__buttons">
         <input
           id="session-increment"
           className="button button_increment"

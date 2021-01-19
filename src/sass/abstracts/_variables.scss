@@ -1,0 +1,54 @@
+/* Backgrounds: */
+// Main Background Color:
+$main-bg                        :   linear-gradient(to right top, #ffd19d, #7dcfb6, #80a1d4);
+
+// Controll Panel Background Color:
+$controll-panel-bg              :   rgba(255, 255, 255, 0.65);
+
+// App Controller Background Color:
+$app-container-bg               :   rgba(255, 255, 255, 0.15);
+
+/* Button  Colors: */
+// Start:
+$button-bg-start                :  #47d6b6;
+$button-bg-stop                 :  #ff847c;
+// Reset:
+$button-bg-reset                :  #c480d4;
+// Inc/Dec:
+$button-bg-lenght               :   transparent;
+// Inc/Dec:
+$button-border-inc              : #00885e;
+$button-border-dec              : #e06e0b;
+$button-color-inc               : #00885e;
+$button-color-dec               : #e06e0b;
+
+/* Text Colors: */
+// Captions:
+$text-color-primary-dark        :   #000000;
+$text-color-secondary-dark      :   #707070;
+$text-color-primary-light       :   #ffffff;
+
+/* Shadow */
+$button-start-shadow-color      :   #969696;
+$button-reset-shadow-color      :   #707070;
+$app-conatainer-shadow-color    :   #bbbbbb54;
+
+/* Sizes: */
+// Captions:
+$text-size-timer                :   8rem;
+$text-size-timer-state          :   3rem;
+
+$text-size-logo                 :   3.5rem;
+$text-size-lenght-label         :   1.5rem;
+
+// Lenght Value:
+$text-size-lenght-val           :   2.5rem;
+
+// Buttons Text:
+$text-size-start-button         :   2.5rem;
+$text-size-reset-button         :   1.6rem;
+$text-size-lenght-button        :   1.6rem;
+
+/* Font-Weight: */
+$font-weight-light              :   300;
+$font-weight-bold               :   400;

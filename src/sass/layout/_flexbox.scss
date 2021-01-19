@@ -1,0 +1,56 @@
+body {
+    @include flex-center;
+}
+
+/* App Container */
+.app-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+/* App Screen */
+.screen {
+    @include flex-center;
+    flex-direction: column;
+    order: 1;
+}
+  
+/* App Controller: */
+.controll-panel {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    order: 2;
+}
+
+
+/* Timer Controller: */
+
+.timer-controller {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+
+    &__lenght {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        text-align: center;
+    }
+    &__buttons {
+        display: flex;
+        justify-content: space-evenly;
+    }
+}
+
+
+/* Buttons: */
+.button_increment,
+.button_decrement {
+    @include flex-center;
+}
+    
+
+  
